@@ -99,7 +99,7 @@ Output Components:
 
 ## 3、编译方法
 
-[fisco-solc的可执行文件已经在根目录中提供](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/fisco-solc)，可直接下载（[CentOS]() 、[Ubuntu](http)）使用。若需要手动编译，可参考此处。
+[fisco-solc的可执行文件已经在根目录中提供](https://github.com/FISCO-BCOS/fisco-solc)，可直接下载（[CentOS](https://github.com/FISCO-BCOS/fisco-solc/raw/master/fisco-solc-centos) 、[Ubuntu](https://github.com/FISCO-BCOS/fisco-solc/raw/master/fisco-solc-ubuntu)）使用。若需要手动编译，可参考此处。
 
 ### 3.1 linux编译方法
 
