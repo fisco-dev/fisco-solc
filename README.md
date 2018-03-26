@@ -14,16 +14,16 @@ fisco-solc对solc的拓展，主要为了兼容FISCO-BCOS中的EthCall功能，�
 
 ``` cpp
 // libevmasm/Instruction.h
-    XOR,				///< bitwise XOR operation
-	NOT,				///< bitwise NOT opertation
-	BYTE,				///< retrieve single byte from word
+XOR,                 ///< bitwise XOR operation
+NOT,                 ///< bitwise NOT opertation
+BYTE,                ///< retrieve single byte from word
 
-	SHA3 = 0x20,		///< compute SHA3-256 hash
-	ETHCALL = 0x2f,     ///< call eth kernel function api  <------------------- New opcode
+SHA3 = 0x20,         ///< compute SHA3-256 hash
+ETHCALL = 0x2f,      ///< call eth kernel function api  <------------------- New opcode
 
-	ADDRESS = 0x30,		///< get address of currently executing account
-	BALANCE,			///< get balance of the given account
-	ORIGIN,				///< get execution origination address
+ADDRESS = 0x30,      ///< get address of currently executing account
+BALANCE,             ///< get balance of the given account
+ORIGIN,              ///< get execution origination address
 ```
 
 
@@ -103,7 +103,7 @@ Output Components:
 
 ### 3.1 linux编译方法
 
-> 切换到目录，
+> 切换到目录
 
 ``` shell
 cd fisco-solc
