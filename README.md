@@ -32,7 +32,7 @@ ORIGIN,              ///< get execution origination address
 
 与solc的使用方法相同。具体使用方法可参考[solidity](https://solidity.readthedocs.io/en/latest/using-the-compiler.html) 。
 
-``` shell
+``` log
 # fisco-bcos --help
 fisco-solc, the Solidity commandline compiler of fisco-bcos.
 Usage: fisco-solc [options] [input_file...]
