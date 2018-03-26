@@ -30,7 +30,34 @@ ORIGIN,              ///< get execution origination address
 
 ## 2、使用方法
 
-与solc的使用方法相同。具体使用方法可参考[solidity](https://solidity.readthedocs.io/en/latest/using-the-compiler.html) 。
+[fisco-solc的可执行文件已经在根目录中提供](https://github.com/FISCO-BCOS/fisco-solc)，可直接下载使用，此处提供直接下载使用的方法。若需要手动编译，可参考本文第三部分：<u>3、编译方法</u>。
+
+> 根据系统，点击下载相应的fisco-solc
+
+CentOs： [fisco-solc-centos](https://github.com/FISCO-BCOS/fisco-solc/raw/master/fisco-solc-centos) 
+
+Ubuntu：[fisco-solc-ubuntu](https://github.com/FISCO-BCOS/fisco-solc/raw/master/fisco-solc-ubuntu)
+
+> 重命名
+
+``` shell
+mv fisco-solc-xxxx fisco-solc
+```
+
+> 安装入系统目录下
+
+``` shell
+chmod +x fisco-solc
+sudo cp fisco-solc /usr/bin
+```
+
+> 检查是否可用
+
+``` shell
+fisco-solc --help
+```
+
+> 安装成功，输出help信息，fisco-solc的使用方法与solc的相同。具体使用方法可参考：[solidity官方文档](https://solidity.readthedocs.io/en/latest/using-the-compiler.html) 。
 
 ``` log
 # fisco-bcos --help
@@ -99,7 +126,7 @@ Output Components:
 
 ## 3、编译方法
 
-[fisco-solc的可执行文件已经在根目录中提供](https://github.com/FISCO-BCOS/fisco-solc)，可直接下载（[CentOS](https://github.com/FISCO-BCOS/fisco-solc/raw/master/fisco-solc-centos) 、[Ubuntu](https://github.com/FISCO-BCOS/fisco-solc/raw/master/fisco-solc-ubuntu)）使用。若需要手动编译，可参考此处。
+若需要手动编译，可参考此处。
 
 ### 3.1 linux编译方法
 
@@ -173,6 +200,3 @@ fisco-bcos.exe --version
 fisco-solc, the solidity compiler commandline interface of fisco-bcos
 Based on solc version: 0.4.11+commit.68ef5810.Windows.msvc
 ```
-
-
-
