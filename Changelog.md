@@ -1,5 +1,16 @@
 ## fisco-solc changelog
 
+### V1.1.0
+
+(2018-06-11)
+
+* Add:
+1. 国密版fisco-solc，使用国密哈希算法SM3计算函数哈希
+2. 添加国密版fisco-solc编译说明文档
+
+* Fix:
+1. 修改cmake/scripts/buildinfo.cmake文件，摆脱fisco-solc编译对.git目录的依赖
+
 ### V1.0.0 
 
 (2018-03-26)
