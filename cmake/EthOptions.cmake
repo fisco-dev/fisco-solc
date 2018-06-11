@@ -7,6 +7,11 @@ macro(configure_project)
 	# components
 	eth_default_option(TESTS OFF)
 	eth_default_option(TOOLS ON)
+	eth_default_option(ENCRYPTTYPE OFF)
+
+	if (ENCRYPTTYPE)
+		add_definitions(-DETH_ENCRYPTTYPE)
+	endif()
 
 	# Define a matching property name of each of the "features".
 	foreach(FEATURE ${ARGN})
@@ -32,6 +37,11 @@ macro(print_config NAME)
 if (SUPPORT_TESTS)
 	message("-- TESTS            Build tests                              ${TESTS}")
 endif()
+
+if (SUPPORT_ENCRYPTTYPE)
+	message("-- ENCRYPTTYPE          Build ENCRYPTTYPE                            ${ENCRYPTTYPE}")
+endif()
+
 if (SUPPORT_TOOLS)
 	message("-- TOOLS            Build tools                              ${TOOLS}")
 endif()

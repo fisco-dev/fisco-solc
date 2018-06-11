@@ -1,7 +1,10 @@
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DSTATICLIB")
 
 aux_source_directory(. SRC_LIST)
-
+if(ENCRYPTTYPE)
+	aux_source_directory(./sm3 SRC_LIST)
+	include_directories(./sm3)
+endif()
 set(EXECUTABLE soldevcore)
 
 file(GLOB HEADERS "*.h")
