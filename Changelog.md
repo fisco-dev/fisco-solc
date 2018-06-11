@@ -1,3 +1,19 @@
+## fisco-solc changelog
+
+### V1.0.0 
+
+(2018-03-26)
+
+fisco-solc是FISCO-BCOS的智能合约编译器。fisco-solc对以太坊的solc进行功能拓展，不仅能编译一般的以太坊合约，还能编译针对FISCO-BCOS的合约，实现了更加强大的功能。
+
+基于以太坊solc的版本：0.4.11 （在使用前请确认合约的版本，是否支持被solc 0.4.11编译）
+
+拓展的功能：[EthCall](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/doc/EthCall%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3.md)
+
+
+
+## History solc changelog
+
 ### 0.4.11 (2017-05-03)
 
 Features:
