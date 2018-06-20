@@ -18,12 +18,15 @@
  * @author Gav Wood <i@gavwood.com>
  * @date 2014
  */
-
-#include "SHA3.h"
 #include <cstdint>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+
+#if ETH_ENCRYPTTYPE
+#include "sm3/sm3.h"
+#endif
+#include "SHA3.h"
 
 using namespace std;
 using namespace dev;
@@ -233,8 +236,11 @@ bool keccak256(bytesConstRef _input, bytesRef o_output)
 	// FIXME: What with unaligned memory?
 	if (o_output.size() != 32)
 		return false;
+#if ETH_ENCRYPTTYPE
+	SM3((unsigned char *)_input.data(), _input.size(), (unsigned char *)o_output.data());
+#else
 	keccak::keccak256(o_output.data(), 32, _input.data(), _input.size());
-//	keccak::keccak(ret.data(), 32, (uint64_t const*)_input.data(), _input.size());
+#endif
 	return true;
 }
 
