@@ -282,17 +282,17 @@ Based on solc version: 0.4.11+commit.68ef5810.Linux.g++
 
 （3）在fisco-solc-master中新建build文件夹，进入build文件夹，打开cmd，执行命令，进行编译
 
-- **编译产生普通版fisco-solc(编译时，加上-DENCRYPTTYPE=ON选项)**
+- **编译产生普通版fisco-solc**
 
-``` powershell
-cmake -DENCRYPTTYPE=ON -G "Visual Studio 14 2015 Win64" ..
+``` bash
+cmake -DENCRYPTTYPE=OFF -G "Visual Studio 14 2015 Win64" ..
 cmake --build . --config RelWithDebInfo
 ```
 
-- **编译产生国密版fisco-solc**
+- **编译产生国密版fisco-solc(编译时，加上-DENCRYPTTYPE=ON选项)**
 
 ```bash
-cmake --G "Visual Studio 14 2015 Win64" ..
+cmake -DENCRYPTTYPE=ON -G "Visual Studio 14 2015 Win64" ..
 cmake --build . --config RelWithDebInfo
 ```
 
