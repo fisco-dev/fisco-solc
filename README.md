@@ -87,9 +87,9 @@ Ubuntu：[fisco-solc-ubuntu](https://github.com/FISCO-BCOS/solidity/releases/dow
 
 > **国密版fisco-solc**
 
-CentOs: [fisco-solc-gm-centos](https://github.com/FISCO-BCOS/solidity/releases/download/release-1.3/fisco-solc-gm-centos)
+CentOs: [fisco-solc-gm-centos](https://github.com/FISCO-BCOS/solidity/releases/download/release-1.3/fisco-solc-guomi-centos)
 
-Ubuntu: [fisco-solc-gm-ubuntu](https://github.com/FISCO-BCOS/solidity/releases/download/release-1.3/fisco-solc-gm-ubuntu)
+Ubuntu: [fisco-solc-gm-ubuntu](https://github.com/FISCO-BCOS/solidity/releases/download/release-1.3/fisco-solc-guomi-ubuntu)
 
 
 > **重命名**
